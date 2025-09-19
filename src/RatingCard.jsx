@@ -1,4 +1,5 @@
 import { useState } from "react";
+import starIcon from "./assets/icon-star.svg";
 
 function RatingCard({ onSubmit }) {
   const [rating, setRating] = useState(null);
@@ -17,10 +18,7 @@ function RatingCard({ onSubmit }) {
         <div className="space-y-8">
           {/* Start Container */}
           <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#262E38] flex items-center justify-center">
-            <img
-              src="src/assets/icon-star.svg"
-              className="w-4 h-4 object-cover"
-            />
+            <img src={starIcon} className="w-4 h-4 object-cover" />
           </div>
 
           {/* Feedback Text Container */}
